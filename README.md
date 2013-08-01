@@ -1,5 +1,5 @@
-jeasyui-php-ajax
-================
+Using JQuery EasyUI with AJAX PHP & MYSQL
+=========================================
 
 Simple sample JQuery EasyUI with AJAX, PHP & MySQL.
 
