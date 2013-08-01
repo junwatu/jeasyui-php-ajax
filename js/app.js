@@ -16,6 +16,7 @@ $('#savebtn').on('click', function(event){
         dataType: 'text',
 		success: function(data, type){
 			console.log("Server Message: "+data);
+            //alert('Server Message:'+data);
 		},
         error: function(jqx, status, err){
             console.log("Error: "+status+"\n"+err);
