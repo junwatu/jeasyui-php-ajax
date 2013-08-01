@@ -36,9 +36,9 @@ function saveData(){
 
     $data = getPostData();
 
-    $stmt = $conn->prepare("INSERT INTO datetime_data VALUES(:id,:waktu)");
+    $stmt = $conn->prepare("INSERT INTO datetime_data SET waktu=:waktu");
+
     $stmt->execute(array(
-        ':id' => 1,
         ':waktu' => $data
     ));
 
