@@ -18,6 +18,10 @@ function getConn(){
     }
 }
 
+/**
+ * Get data from POST
+ * @return bool|string
+ */
 function getPostData(){
     $dateData = $_POST['dateTimeData'];
     $todate = date('Y-d-m H:i', strtotime(str_replace('-', '/', $dateData)));
@@ -25,12 +29,18 @@ function getPostData(){
     return $todate;
 }
 
+/**
+ *  Simple echo data
+ */
 function echoData(){
     getConn();
     $data = getPostData();
     echo "Format (Y-d-m H:i) : ".$data;
 }
 
+/**
+ *  Save data to MYSQL
+ */
 function saveData(){
     $conn = getConn();
 
@@ -46,7 +56,6 @@ function saveData(){
 }
 
 // Main
-
 saveData();
 
 ?>
