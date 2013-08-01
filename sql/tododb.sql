@@ -1,0 +1,6 @@
+CREATE SCHEMA tododb;
+CREATE TABLE datetime_data
+(
+    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    waktu DATETIME
+);
